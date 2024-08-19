@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD</title>
 
-    <!---------CSS Link--------->
-    <link rel="stylesheet" href="style.css">
-
     <!---------Boostrap Link--------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -24,6 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---------CSS Link--------->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -40,13 +40,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Fruit</a>
+                        <a class="nav-link" aria-current="page" href="#fruit">Fruit</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Vegetable</a>
+                        <a class="nav-link" aria-current="page" href="#vegetable">Vegetable</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -54,7 +54,7 @@
                             All Categories
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#action">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -69,11 +69,11 @@
     <!------------------Navbar End------------------>
 
     <!------------------Home Start------------------>
-    <header id="home">
+    <section id="home">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-5">
-                    <div class="home-item-one" data-aos="fade-right" data-aos-delay="0">
+                <div class="col-lg-6 col-md-5" data-aos="fade-right">
+                    <div class="home-item-one">
                         <h4>Fruits §<br>
                             Vegetables</h4>
                         <p>These superfoods are packed with vital nutrients, including vitamins
@@ -83,23 +83,23 @@
                         <button type="button" class="btn-one">View More</button>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-7">
-                    <div class="home-item-two" data-aos="fade-left" data-aos-delay="0" data-aos-duration="1000">
+                <div class="col-lg-6 col-md-7" data-aos="fade-left">
+                    <div class="home-item-two">
                         <img src="image/home.png" alt="">
 
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!------------------Home End------------------>
 
     <!------------------Categoris one Start------------------>
-    <section class="Categories mt-5">
+    <section class="Categories mt-5 p-2">
         <h1 class="Categories-title">Love Our Categories</h1>
-        <div class="container" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000">
+        <div class="container">
             <div class="row">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-up">
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body">
@@ -162,7 +162,7 @@
             </div>
 
             <div class="row">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-up">
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body" style="   background: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(image/cake.jpg);
@@ -232,13 +232,13 @@
     <!------------------Categoris one End------------------>
 
     <!------------------Categoris two Start------------------>
-    <section class="Categories-two mt-5">
+    <section class="Categories-two mt-5 p-2">
         <h1 class="Categories-title">Love Our Categories</h1>
         <div class="container">
             <div class="row">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card-two" data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000">
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+                    <div class="col-lg-4 col-12">
+                        <div class="card-two" data-aos="fade-right">
                             <img src="image/card-two.png" class="card-img-top" alt="...">
                             <div class="card-body-two">
                                 <h5>Fruits</h5>
@@ -255,8 +255,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card-two" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                    <div class="col-lg-4 col-12">
+                        <div class="card-two" data-aos="fade-up">
                             <img src="image/card-one.png" class="card-img-top" alt="...">
                             <div class="card-body-two">
                                 <h5>juices</h5>
@@ -273,8 +273,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card-two" data-aos="fade-left" data-aos-delay="0" data-aos-duration="1000">
+                    <div class="col-lg-4 col-12">
+                        <div class="card-two" data-aos="fade-left">
                             <img src="image/card-three.png" class="card-img-top" alt="...">
                             <div class="card-body-two">
                                 <h5>Bakers</h5>
@@ -299,9 +299,10 @@
     <!------------------Categoris two End------------------>
 
     <!------------------Categoris three Start------------------>
-    <section class="Categories-three mt-5">
-        <h1 class="Categories-title" style="color: #FFFFFF; margin-bottom: 20px;">Love Our Categories</h1>
+    <section class="Categories-three mt-5 p-2">
+
         <div class="container">
+            <h1 class="Categories-title p-3" style="color: #FFFFFF;">Love Our Categories</h1>
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
@@ -328,10 +329,9 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">
                     <div class="row">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
                             <div class="col">
-                                <div class="card-three" data-aos="fade-right" data-aos-delay="0"
-                                    data-aos-duration="1000">
+                                <div class="card-three" data-aos="fade-left">
                                     <img src="image/card-two.png" class="card-img-top" alt="...">
                                     <div class="card-body-three">
                                         <h5>Fruits</h5>
@@ -349,7 +349,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-three" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                                <div class="card-three" data-aos="fade-down">
                                     <img src="image/card-one.png" class="card-img-top" alt="...">
                                     <div class="card-body-three">
                                         <h5>juices</h5>
@@ -367,8 +367,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-three" data-aos="fade-left" data-aos-delay="0"
-                                    data-aos-duration="1000">
+                                <div class="card-three" data-aos="fade-right">
                                     <img src="image/card-three.png" class="card-img-top" alt="...">
                                     <div class="card-body-three">
                                         <h5>Bakers</h5>
@@ -400,14 +399,14 @@
     <!------------------Categoris three End------------------>
 
     <!------------------Categoris Four Start------------------>
-    <section class="Categories-four mt-5">
+    <section class="Categories-four mt-5 p-2">
         <h1 class="Categories-title">Categories</h1>
         <div class="container">
-            <div class="row" data-aos="zoom-in">
-                <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-4 g-4" data-aos="zoom-in-down">
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="card-four">
-                            <div class="card-body-four" style="background: #E46002;">
+                            <div class="card-body-four p-3" style="background: #E46002;">
                                 <img class="card-img-one" src="image/kumra.png" alt="">
                                 <h5>Juices</h5>
                                 <p>Brocoli Shake</p>
@@ -425,7 +424,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="card-four">
-                            <div class="card-body-four" style="background: #FCC601;">
+                            <div class="card-body-four p-3" style="background: #FCC601;">
                                 <img class="card-img-two" src="image/banana.png" alt="">
                                 <h5>Juices</h5>
                                 <p>Brocoli Shake</p>
@@ -444,7 +443,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="card-four">
-                            <div class="card-body-four" style="background: #327613;">
+                            <div class="card-body-four p-3" style="background: #327613;">
                                 <img class="card-img-three" src="image/abokado.png" alt="">
                                 <h5>Juices</h5>
                                 <p>Brocoli Shake</p>
@@ -463,7 +462,7 @@
 
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="card-four">
-                            <div class="card-body-four" style="background: #EF174B;">
+                            <div class="card-body-four p-3" style="background: #EF174B;">
                                 <img class="card-img-four" src="image/dragon.png" alt="">
                                 <h5>Juices</h5>
                                 <p>Brocoli Shake</p>
@@ -488,7 +487,7 @@
 
 
     <!------------------Categoris Five Start------------------>
-    <section class="mt-5">
+    <section class="mt-5 p-2">
         <div class="container">
             <div class="row">
                 <div class="row g-3">
@@ -525,10 +524,10 @@
     <!------------------Categoris Five End------------------>
 
     <!------------------Categoris six Start------------------>
-    <section class="Categories-five mt-5">
+    <section class="Categories-five mt-5 p-2">
         <div class="container">
             <div class="row">
-                <div class="right-div col-lg-6" data-aos="fade-down-right" data-aos-delay="0" data-aos-duration="1000">
+                <div class="right-div col-lg-6" data-aos="fade-right">
                     <h1>Categories</h1>
                     <p>These superfoods are packed with vital nutrients, including vitamins
                         and minerals that can help keep you health. Plus, they’re easy to
@@ -537,7 +536,7 @@
 
                 </div>
 
-                <div class="col-lg-6" data-aos="fade-down-left" data-aos-delay="0" data-aos-duration="1000">
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col-lg-6">
                             <div class="card-seven sm-mt-5">
@@ -595,7 +594,7 @@
     <!------------------Categoris six End------------------>
 
     <!------------------Blog Start------------------>
-    <section class="blog mt-5">
+    <section class="blog mt-5 p-2">
         <div class="container">
             <div class="blog-text text-center">
                 <h1>Blog § Articles</h1>
@@ -605,8 +604,8 @@
             </div>
             <div class="row">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col" data-aos="zoom-out-right" data-aos-delay="0" data-aos-duration="1000">
-                        <div class="card-eight">
+                    <div class="col">
+                        <div class="card-eight" data-aos="fade-up-right">
                             <img src="image/orang.jpg" class="card-img-top" alt="...">
                             <div class="card-body-eight">
                                 <h5>Fruit is an Essential <br>
@@ -617,8 +616,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
-                        <div class="card-eight">
+                    <div class="col">
+                        <div class="card-eight" data-aos="fade-down-left">
                             <img src="image/berry.jpg" class="card-img-top" alt="...">
                             <div class="card-body-eight">
                                 <h5>Fruit is an Essential <br>
@@ -629,8 +628,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col" data-aos="zoom-out-left" data-aos-delay="0" data-aos-duration="1000">
-                        <div class="card-eight">
+                    <div class="col">
+                        <div class="card-eight" data-aos="fade-up-left">
                             <img src="image/malta.jpg" class="card-img-top" alt="...">
                             <div class="card-body-eight">
                                 <h5>Fruit is an Essential <br>
@@ -648,11 +647,11 @@
     <!------------------Blog End------------------>
 
     <!------------------Footer Start------------------>
-    <footer class="mt-4">
+    <footer class="mt-4 p-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <div class="first-div">
+                    <div class="first-div ">
                         <h5>FOODMART</h5>
                         <p>These superfoods are packed with vital nutrients, including vitamins and minerals that can
                             help keep you health..</p>
@@ -688,6 +687,8 @@
                 </div>
             </div>
         </div>
+        <hr>
+
         <div class="container">
             <div class="footer-last">
                 <div class="row justify-content-between">
